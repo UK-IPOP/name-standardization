@@ -10,6 +10,10 @@ lint:
 	@echo "Running flake8 linter..."
 	@flake8 src/standard_names --max-line-length=89
 
+test:
+	@echo "Running pytest..."
+	@pytest tests --color=yes
+
 docs:
 	@echo "Making docs..."
 	# do mkdocs stuff here
