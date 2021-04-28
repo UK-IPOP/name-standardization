@@ -15,6 +15,8 @@ HONORIFICS = {
 }
 """Set of honorofics."""
 
+
+# TODO: all of these should have double capitals, so title_case function doesn't work...
 ACADEMIC_TITLES = {
     "Dr.",
     "Ph.D.",
@@ -35,8 +37,6 @@ SUFFIXES = {
 
 
 def title_case(name: str) -> str: return name.title()
-
-
 """Title cases the name.
 
 Capitalizes the first letter of each word.
@@ -50,8 +50,6 @@ Returns:
 
 
 def strip_periods(name: str) -> str: return name.replace(".", "")
-
-
 """Strips periods from the string.
 
 This is particularly useful for standardizing prefixes and suffixes.
@@ -62,5 +60,6 @@ Args:
 Returns:
     str: Original string without '.'
 """
+
 
 RULES = (title_case, strip_periods,)
